@@ -5,7 +5,7 @@ import Link from '@mui/material/Link';
 import Slider from '@mui/material/Slider';
 import PopoverMenu from './PopoverMenu';
 import ProTip from './ProTip';
-
+import Router from "./pages";
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
@@ -21,21 +21,9 @@ function Copyright() {
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <div className="my-4">
-        <Typography variant="h4" component="h1" gutterBottom>
-          Material UI Create React App example with Tailwind CSS in TypeScript
-        </Typography>
-        <Slider
-          className="my-4"
-          defaultValue={30}
-          classes={{ active: 'shadow-none' }}
-          slotProps={{ thumb: { className: 'hover:shadow-none' } }}
-        />
-        <PopoverMenu />
-        <ProTip />
-        <Copyright />
-      </div>
+    <Container maxWidth="lg">
+      <Router />
+
     </Container>
   );
 }
