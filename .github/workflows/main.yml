@@ -19,12 +19,15 @@ jobs:
           node-version: 16  # You can change this to your desired Node.js version
 
       - name: Install dependencies
+        working-directory: ./web-app
         run: npm install
 
       - name: Build the app
+        working-directory: ./web-app
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        working-directory: ./web-app
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@users.noreply.github.com"
