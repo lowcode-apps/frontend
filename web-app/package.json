@@ -1,7 +1,8 @@
 {
-  "name": "material-ui-cra-tailwind-ts",
-  "version": "5.0.0",
+  "name": "web-app",
+  "version": "1.0.0",
   "private": true,
+  "homepage": "https://jk-techsolutions.github.io/frontend",
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
@@ -15,6 +16,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "gh-pages": "^6.0.0",
     "markdown-to-jsx": "^7.3.2",
     "postcss": "latest",
     "react": "latest",
@@ -30,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
