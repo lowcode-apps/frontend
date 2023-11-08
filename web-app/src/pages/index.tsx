@@ -8,6 +8,7 @@ import Products from "./Products";
 import SignUp from "./SignUp";
 import ShoppingCart from "./ShoppingCart";
 import Calendar from "./Calendar";
+import Map from "./Map";
 
 // Sample components for different routes
 const Home = () => <div>
@@ -61,6 +62,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/shopping-cart" element={<ShoppingCart />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/map" element={<Map />} />
 
           <Route path="/blog" element={<Blog />} />
           <Route path="/dashboard" element={<Dashboard />} />
