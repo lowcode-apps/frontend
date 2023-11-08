@@ -6,6 +6,7 @@ import Dashboard from "./Dashboard";
 import Pricing from "./Pricing";
 import Products from "./Products";
 import SignUp from "./SignUp";
+import ShoppingCart from "./ShoppingCart";
 
 // Sample components for different routes
 const Home = () => <div>
@@ -56,6 +57,7 @@ function App() {
 
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/shopping-cart" element={<ShoppingCart />} />
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/blog" element={<Blog />} />

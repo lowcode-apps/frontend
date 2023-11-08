@@ -15,15 +15,18 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/styled-components": "^5.1.30",
     "autoprefixer": "latest",
     "gh-pages": "^6.0.0",
     "markdown-to-jsx": "^7.3.2",
     "postcss": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-query": "^3.39.3",
     "react-router-dom": "^6.18.0",
     "react-scripts": "latest",
     "recharts": "^2.9.3",
+    "styled-components": "^6.1.0",
     "tailwindcss": "latest",
     "typescript": "latest",
     "web-vitals": "latest"
@@ -34,7 +37,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
