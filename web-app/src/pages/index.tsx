@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import AppRoutes from "./routes";
 
@@ -16,7 +16,11 @@ function App() {
             AppRoutes.map((routes: any) => {
               const Component = routes.component;
               return <Route path={routes.path} key={routes.path}
-                element={<Component />}></Route>
+                element={
+                  <Suspense fallback={<div>Loading</div>}>
+                    <Component />
+                  </Suspense>
+                }></Route>
             })
           }
         </Routes>
