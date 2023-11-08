@@ -3,7 +3,16 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import AppRoutes from "./routes";
 
 // Sample components for different routes
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
+function CircularIndeterminate() {
+  return (
+    <Box sx={{ display: 'flex' }}>
+      <CircularProgress />
+    </Box>
+  );
+}
 function App() {
   return (
     <Router>
@@ -17,7 +26,7 @@ function App() {
               const Component = routes.component;
               return <Route path={routes.path} key={routes.path}
                 element={
-                  <Suspense fallback={<div>Loading</div>}>
+                  <Suspense fallback={<CircularIndeterminate></CircularIndeterminate>}>
                     <Component />
                   </Suspense>
                 }></Route>
