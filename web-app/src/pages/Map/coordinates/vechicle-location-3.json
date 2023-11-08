@@ -1,0 +1,162 @@
+[
+  {
+    "lat": 13.319535,
+    "lng": 80.192469,
+    "speed": 15.5463,
+    "altitude": 52,
+    "devicetime": "2022-03-31T20:28:46.000Z",
+    "color": "yellow"
+  },
+  {
+    "lat": 13.319761,
+    "lng": 80.192829,
+    "speed": 18.1237,
+    "altitude": 49,
+    "devicetime": "2022-03-31T20:29:12.000Z",
+    "color": "red"
+  },
+  {
+    "lat": 13.319396,
+    "lng": 80.192288,
+    "speed": 14.8901,
+    "altitude": 46,
+    "devicetime": "2022-03-31T20:30:01.000Z",
+    "color": "green"
+  },
+  {
+    "lat": 13.319684,
+    "lng": 80.192018,
+    "speed": 17.9742,
+    "altitude": 53,
+    "devicetime": "2022-03-31T20:31:24.000Z",
+    "color": "blue"
+  },
+  {
+    "lat": 13.319267,
+    "lng": 80.192741,
+    "speed": 16.2358,
+    "altitude": 50,
+    "devicetime": "2022-03-31T20:32:50.000Z",
+    "color": "orange"
+  },
+  {
+    "lat": 13.319145,
+    "lng": 80.192099,
+    "speed": 15.7894,
+    "altitude": 48,
+    "devicetime": "2022-03-31T20:33:17.000Z",
+    "color": "purple"
+  },
+  {
+    "lat": 13.319319,
+    "lng": 80.192476,
+    "speed": 19.3675,
+    "altitude": 51,
+    "devicetime": "2022-03-31T20:34:42.000Z",
+    "color": "pink"
+  },
+  {
+    "lat": 13.319852,
+    "lng": 80.192894,
+    "speed": 16.9947,
+    "altitude": 47,
+    "devicetime": "2022-03-31T20:35:55.000Z",
+    "color": "cyan"
+  },
+  {
+    "lat": 13.319478,
+    "lng": 80.192152,
+    "speed": 18.4329,
+    "altitude": 54,
+    "devicetime": "2022-03-31T20:36:28.000Z",
+    "color": "magenta"
+  },
+  {
+    "lat": 13.319706,
+    "lng": 80.192849,
+    "speed": 15.2203,
+    "altitude": 45,
+    "devicetime": "2022-03-31T20:37:11.000Z",
+    "color": "violet"
+  },
+  {
+    "lat": 13.319264,
+    "lng": 80.192568,
+    "speed": 17.8786,
+    "altitude": 50,
+    "devicetime": "2022-03-31T20:38:06.000Z",
+    "color": "teal"
+  },
+  {
+    "lat": 13.319579,
+    "lng": 80.192673,
+    "speed": 14.6759,
+    "altitude": 49,
+    "devicetime": "2022-03-31T20:39:29.000Z",
+    "color": "olive"
+  },
+  {
+    "lat": 13.319412,
+    "lng": 80.192257,
+    "speed": 16.7834,
+    "altitude": 52,
+    "devicetime": "2022-03-31T20:40:15.000Z",
+    "color": "maroon"
+  },
+  {
+    "lat": 13.319684,
+    "lng": 80.192742,
+    "speed": 18.1237,
+    "altitude": 47,
+    "devicetime": "2022-03-31T20:41:03.000Z",
+    "color": "lime"
+  },
+  {
+    "lat": 13.319236,
+    "lng": 80.192612,
+    "speed": 15.5463,
+    "altitude": 53,
+    "devicetime": "2022-03-31T20:42:19.000Z",
+    "color": "navy"
+  },
+  {
+    "lat": 13.319687,
+    "lng": 80.192035,
+    "speed": 19.0120,
+    "altitude": 48,
+    "devicetime": "2022-03-31T20:43:45.000Z",
+    "color": "gray"
+  },
+  {
+    "lat": 13.319532,
+    "lng": 80.192697,
+    "speed": 15.9872,
+    "altitude": 50,
+    "devicetime": "2022-03-31T20:44:31.000Z",
+    "color": "brown"
+  },
+  {
+    "lat": 13.319804,
+    "lng": 80.192191,
+    "speed": 16.4524,
+    "altitude": 52,
+    "devicetime": "2022-03-31T20:45:57.000Z",
+    "color": "black"
+  },
+  {
+    "lat": 13.319367,
+    "lng": 80.192726,
+    "speed": 18.5678,
+    "altitude": 49,
+    "devicetime": "2022-03-31T20:46:24.000Z",
+    "color": "white"
+  },
+  {
+    "lat": 13.319705,
+    "lng": 80.192496,
+    "speed": 17.2786,
+    "altitude": 46,
+    "devicetime": "2022-03-31T20:47:39.000Z",
+    "color": "pink"
+  }
+]

@@ -3,46 +3,42 @@ import "leaflet/dist/leaflet.js";
 import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Polyline } from "react-leaflet";
 import AirplaneMarker from "./AirplaneMarker";
-import geopoints from "./geo-location.json";
-import newGeoPoints from "./new-points.json";
+// import geopoint from "./geo-location.json"; // for vechile location marker in map
+
+// import newGeoPoints from "./new-points.json";// for default marker in map
+
+
+import { Button } from "@mui/material";
 // import "./styles.css";
+
+import TrackedLocation1 from "./coordinates/tracked-location-1.json";
+import VechileLocation1 from "./coordinates/vechicle-location-1.json";
+
+import VechileLocation2 from "./coordinates/vechicle-location-2.json";
+import TrackedLocation2 from "./coordinates/tracked-location-2.json";
+
+
+import VechileLocation3 from "./coordinates/vechicle-location-3.json";
+import TrackedLocation3 from "./coordinates/tracked-location-3.json";
+
 
 /*
 
 Reference  https://codesandbox.io/s/github/varakalaajay/live-tracking-react-leaflet-marker/tree/main/?file=/src/AirplaneMarker.js:0-847
 
 */
-const dataStory = [
-  {
-    lat: 53.22376666666667,
-    lng: 50.745841666666664,
-  },
-  {
-    lat: 53.22376666666667,
-    lng: 50.745841666666664,
-  },
-  {
-    lat: 53.223728333333334,
-    lng: 50.74598666666667,
-  },
-  {
-    lat: 53.223705,
-    lng: 50.746021666666664,
-  },
-  {
-    lat: 53.22365166666667,
-    lng: 50.746075,
-  },
-];
-
 let cursor = 0;
 
-const Map=() =>{
+const Map = () => {
   const [currentTrack, setCurrentTrack] = useState<{
     lat?: number;
     lng?: number;
   }>({});
-  const [positions, setPositions] = useState<any>(newGeoPoints);
+  const [count, setCount] = useState<any>(0);
+
+  const [positions, setPositions] = useState<any>(TrackedLocation1);
+  const [geopoints, setGeopoints] = useState<any>(VechileLocation1);
+
   useEffect(() => {
     setCurrentTrack(geopoints[cursor]);
 
@@ -59,10 +55,33 @@ const Map=() =>{
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [geopoints]);
 
   return (
     <div>
+      <Button
+        type="button"
+        fullWidth
+        onClick={() => {
+          let post = TrackedLocation2;
+          let geo = VechileLocation2
+          if (count % 3 != 0) {
+            post = TrackedLocation1;
+            geo = VechileLocation1;
+          }else if(count % 3 != 1){
+            post = TrackedLocation3;
+            geo = VechileLocation3;
+          }
+          setPositions(post)
+          setGeopoints(geo)
+          setCount((count: any) => count + 1)
+
+        }}
+        variant="contained"
+        sx={{ mt: 3, mb: 2 }}
+      >
+        toggle location
+      </Button>
       <MapContainer
         style={{ height: "calc(100vh - 52px)" }}
         center={[22.2974883, 73.2067383]}
