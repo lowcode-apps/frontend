@@ -14,102 +14,93 @@ const AdminPanel = React.lazy(() => import("./AdminPanel"));
 const MUIApp = React.lazy(() => import("./MUIApp"));
 
 
-interface AppRoute {
+export interface AppRouteProps {
   path: string;
-
   name: string;
-
   description: string;
   component: React.ComponentType;
 }
 
-const AppRoutes: AppRoute[] = [
+const AppRoutes: AppRouteProps[]  = [
   {
     path: "/sign-up",
     name: "Sign Up Page",
-    description: "Create a new account to access our services.",
+    description: "Kickstart your journey by creating a new account with us.",
     component: SignUp,
-  },
-  {
-    path: "/",
-    name: "Home Page",
-    description:
-      "Welcome to our home page where you can find the latest updates.",
-    component: Home,
   },
   {
     path: "/pricing",
     name: "Pricing Page",
-    description:
-      "Check out our pricing plans and choose the one that suits your needs.",
+    description: "Explore our flexible pricing plans tailored just for you.",
     component: Pricing,
   },
   {
     path: "/calendar",
     name: "Calendar Page",
-    description:
-      "View and manage your events and appointments on our calendar.",
+    description: "Effortlessly manage your events and appointments on our intuitive calendar.",
     component: Calendar,
   },
   {
     path: "/home",
     name: "Home Page",
-    description:
-      "Welcome to our home page where you can find the latest updates.",
+    description: "Stay in the loop with our latest updates and announcements.",
     component: Home,
   },
   {
     path: "/blog",
     name: "Blog Page",
-    description: "Explore our blog for interesting articles and news.",
+    description: "Dive into a world of intriguing articles and stay informed with our blog.",
     component: Blog,
   },
   {
     path: "/sign-in",
     name: "Sign In Page",
-    description: "Log in to your account and access your profile and settings.",
+    description: "Securely log in to your account and take control of your profile and settings.",
     component: SignIn,
   },
   {
     path: "/products",
     name: "Products Page",
-    description: "Browse and purchase our range of products and services.",
+    description: "Discover and purchase from our curated range of high-quality products and services.",
     component: Products,
   },
   {
-    path: "/map",
+    path: "/map/*",
     name: "Map Page",
-    description: "Discover locations and navigate using our interactive map.",
+    description: "Embark on a journey of exploration using our feature-rich interactive map.",
     component: Map,
   },
   {
     path: "/dashboard",
     name: "Dashboard Page",
-    description: "Access your user dashboard and manage your account.",
+    description: "Seamlessly manage your account with our user-friendly dashboard.",
     component: Dashboard,
   },
   {
     path: "/shopping-cart",
     name: "Shopping Cart Page",
-    description:
-      "View and manage items in your shopping cart before making a purchase.",
+    description: "Organize and review your shopping cart contents before making a purchase.",
     component: ShoppingCart,
   },
   {
     path: "/admin-panel",
     name: "Admin Panel Page",
-    description:
-      "View and manage appilication settings in admin panel.",
+    description: "Efficiently handle application settings and configurations in our admin panel.",
     component: AdminPanel,
   },
   {
     path: "/onepirate/*",
     name: "New App Page",
-    description:
-      "View and manage appilication settings in admin panel.",
+    description: "Explore the features of our new application with a sleek and modern interface.",
     component: MUIApp,
   },
-  
+  {
+    path: "/",
+    name: "Home Page",
+    description: "Welcome to the heart of our online space, where updates and news converge.",
+    component: Home,
+  },
 ];
+
 
 export default AppRoutes;
