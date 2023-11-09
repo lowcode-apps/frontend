@@ -10,6 +10,9 @@ const Map = React.lazy(() => import("./Map"));
 const Blog = React.lazy(() => import("./Blog"));
 const Dashboard = React.lazy(() => import("./Dashboard"));
 const ShoppingCart = React.lazy(() => import("./ShoppingCart"));
+const AdminPanel = React.lazy(() => import("./AdminPanel"));
+const MUIApp = React.lazy(() => import("./MUIApp"));
+
 
 interface AppRoute {
   path: string;
@@ -85,6 +88,21 @@ const AppRoutes: AppRoute[] = [
       "View and manage items in your shopping cart before making a purchase.",
     component: ShoppingCart,
   },
+  {
+    path: "/admin-panel",
+    name: "Admin Panel Page",
+    description:
+      "View and manage appilication settings in admin panel.",
+    component: AdminPanel,
+  },
+  {
+    path: "/onepirate/*",
+    name: "New App Page",
+    description:
+      "View and manage appilication settings in admin panel.",
+    component: MUIApp,
+  },
+  
 ];
 
 export default AppRoutes;
