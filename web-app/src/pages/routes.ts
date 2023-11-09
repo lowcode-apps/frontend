@@ -31,6 +31,13 @@ const AppRoutes: AppRoute[] = [
     component: SignUp,
   },
   {
+    path: "/",
+    name: "Home Page",
+    description:
+      "Welcome to our home page where you can find the latest updates.",
+    component: Home,
+  },
+  {
     path: "/pricing",
     name: "Pricing Page",
     description:
